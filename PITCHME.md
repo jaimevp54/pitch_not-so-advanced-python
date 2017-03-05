@@ -1,6 +1,6 @@
 #HSLIDE
 ## Not so advanced python
-### (for real)
+<span style="font-size:0.6em; color:gray">(for real)</span> 
 
 #HSLIDE
 `>>> help()`
@@ -49,8 +49,9 @@ cities = {user.name: user.city for user in users}
 #    }
 ```
 #VSLIDE
-<div class='row'>
-<div class='col-sm-6'>
+<table>
+<tr>
+<td>
 ```python
 from random import randrange
 
@@ -73,8 +74,8 @@ for number in random_list:
     if number%2 != 0:
         how_many_odds += 1
 ```
-<div/>
-<div class='col-sm-6'>
+<td/>
+<td>
 ```
 from random import randrange
 
@@ -82,4 +83,26 @@ random_list = [randrange(100) for i in range(10)]
 
 divided_by_3 = [number for number in random_list if number%3==0]
 less_than_15 = [number for number in random_list if number<15]
-how_many_odds = len([num
+how_many_odds = len([number for number in random_list if number%2 != 0])
+```
+<td/>
+<tr/>
+<table>
+
+#HSLIDE
+#VSLIDE
+
+#HSLIDE
+#VSLIDE
+
+#HSLIDE
+#VSLIDE
+
+#HSLIDE
+#VSLIDE
+
+#HSLIDE
+#VSLIDE
+
+#HSLIDE
+
