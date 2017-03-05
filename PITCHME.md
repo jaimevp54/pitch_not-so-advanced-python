@@ -1,6 +1,6 @@
 #HSLIDE
 ## Not so advanced python
-### <span style="font-size:0.6em; color:gray">(for real)</span> 
+## <span style="font-size:0.6em; color:gray">(for real)</span> 
 
 #HSLIDE
 `>>> help()`
@@ -75,7 +75,7 @@ for number in random_list:
         how_many_odds += 1
 ```
 <td/>
-<td>
+<td class="fragment">
 ```
 from random import randrange
 
