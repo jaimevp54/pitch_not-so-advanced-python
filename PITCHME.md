@@ -23,10 +23,10 @@ for user in users:
     cities.append(user.city)
 ```
 ```python
-# cities => ['Santiago', 'San Juan', 'SANTIAGO', 'santiago']
+# cities -> ['Santiago', 'San Juan', 'SANTIAGO', 'santiago']
 ```
 #VSLIDE
-### Lists Comprehensions
+#### Lists Comprehensions
 ```python
 cities = [user.city for user in users]
 ```
@@ -34,25 +34,25 @@ cities = [user.city for user in users]
 # cities -> ['Santiago', 'San Juan', 'SANTIAGO', 'santiago']
 ```
 #VSLIDE
-### Set Comprehensions
+#### Sets
 ```python
-cities -> {user.city.lower() for user in users}
+cities = {user.city.lower() for user in users}
 ```
 ```python
 # cities -> {'santiago', 'san juan'}
 ```
 #VSLIDE
-### Dictionary comprehensions
+#### Dictionaries
 ```python
 cities = {user.name: user.city for user in users}
 ```
 ```python
 # cities -> {
-    'Nabucodonosor': 'santiago',
-    'Pedro': 'San Juan',
-    'Marcos': 'SANTIAGO',
-    'Juan': 'Santiago'
-    }
+#    'Nabucodonosor': 'santiago',
+#    'Pedro': 'San Juan',
+#    'Marcos': 'SANTIAGO',
+#    'Juan': 'Santiago'
+#    }
 ```
 #HSLIDE
 #VSLIDE
