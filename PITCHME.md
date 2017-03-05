@@ -94,9 +94,9 @@ mul_by_two = lambda x : x*2
 ``` 
 <!-- .element: class="fragment" -->
 #VSLIDE
-### Ex 1: 
+##### Ex 1: 
 #VSLIDE
-### Ex 2: 
+##### Ex 2: 
 ```python
 list_of['int'](3)
 # [34, 23, 15]
@@ -104,7 +104,7 @@ list_of['float'](3)
 # [34.5345, 4.1239, 88.6531]
 ```
 #VSLIDE
-### Ex 2:
+##### Ex 2:
 ```python
 from random import randrange, random
 
