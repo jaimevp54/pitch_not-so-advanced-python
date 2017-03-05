@@ -90,7 +90,10 @@ def mul_by_two(x):
     return x*2
 ```
 
-```lambda x : x*2``` <!-- .element: class="fragment" -->
+```python
+mul_by_two = lambda x : x*2
+``` 
+<!-- .element: class="fragment" -->
 
 
 
