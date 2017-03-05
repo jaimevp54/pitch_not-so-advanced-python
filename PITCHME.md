@@ -85,10 +85,12 @@ how_many_odds = len([number for number in random_list if number%2 != 0])
 #VSLIDE
 `lambda argument: manipulate(argument)`
 #VSLIDE
-`def mul_by_two(x):
+```
+def mul_by_two(x):
     return x*2
-`
-`lambda x : x*2` <!-- .element: class="fragment" -->
+```
+
+```lambda x : x*2``` <!-- .element: class="fragment" -->
 
 
 
