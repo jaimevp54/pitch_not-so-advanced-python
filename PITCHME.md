@@ -6,7 +6,7 @@
 `>>> help()`
 
 #HSLIDE
-`[ comprehensions ]`
+### `[ comprehensions ]`
 #VSLIDE
 ```python
 juan = Person(name='Juan', city='Santiago')
@@ -81,8 +81,16 @@ how_many_odds = len([number for number in random_list if number%2 != 0])
 ```
 
 #HSLIDE
-$$\lambda ambda functions:$$
+### $$\lambda ambda  functions:$$
 #VSLIDE
+`lambda argument: manipulate(argument)`
+#VSLIDE
+`def mul_by_two(x):
+    return x*2
+`
+`lambda x : x*2` <!-- .element: class="fragment" -->
+
+
 
 #HSLIDE
 #VSLIDE
