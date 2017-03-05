@@ -26,27 +26,21 @@ for user in users:
 # cities -> ['Santiago', 'San Juan', 'SANTIAGO', 'santiago']
 ```
 #VSLIDE
-#### Lists Comprehensions
+#### Lists
 ```python
 cities = [user.city for user in users]
-```
-```python
 # cities -> ['Santiago', 'San Juan', 'SANTIAGO', 'santiago']
 ```
 #VSLIDE
 #### Sets
 ```python
 cities = {user.city.lower() for user in users}
-```
-```python
 # cities -> {'santiago', 'san juan'}
 ```
 #VSLIDE
 #### Dictionaries
 ```python
 cities = {user.name: user.city for user in users}
-```
-```python
 # cities -> {
 #    'Nabucodonosor': 'santiago',
 #    'Pedro': 'San Juan',
@@ -55,6 +49,8 @@ cities = {user.name: user.city for user in users}
 #    }
 ```
 #VSLIDE
+<div class='row'>
+<div> class='col-sm-6'>
 ```python
 from random import randrange
 
@@ -71,12 +67,14 @@ less_than_15 = []
 for number in random_list:
     if number<15:
         less_than_15.append(number)
-
+        
 how_many_odds = 0 
 for number in random_list:
     if number%2 != 0:
         how_many_odds += 1
 ```
+<div/>
+<div> class='col-sm-6'>
 ```
 from random import randrange
 
@@ -86,6 +84,8 @@ divided_by_3 = [number for number in random_list if number%3==0]
 less_than_15 = [number for number in random_list if number<15]
 how_many_odds = len([number for number in random_list if number%2 != 0])
 ```
+<div/>
+<div/>
 
 #HSLIDE
 #VSLIDE
