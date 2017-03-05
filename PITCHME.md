@@ -26,19 +26,24 @@ for user in users:
 # cities => ['Santiago', 'San Juan', 'SANTIAGO', 'santiago']
 ```
 #VSLIDE
+<span class="fragment"> 
 ```python
 cities = [user.city for user in users]
 # cities => ['Santiago', 'San Juan', 'SANTIAGO', 'santiago']
-``` <!-- .element: class="fragment" -->
+```
+<span/>
 
+<span class="fragment"> 
 ```python
 cities = {user.city.lower() for user in users}
 # cities = {'santiago', 'san juan'}
-``` <!-- .element: class="fragment" -->
-```python
+``` 
+<span/>
+
+<span class="fragment"> 
 cities = {user.name: user.city for user in users}
 # cities = {'Nabucodonosor': 'santiago', 'Pedro': 'San Juan', 'Marcos': 'SANTIAGO', 'Juan': 'Santiago'}
-``` <!-- .element: class="fragment" -->
+<span/> 
 
 #HSLIDE
 ## lambda
