@@ -17,7 +17,7 @@ nabucodonosor = Person(name='Nabucodonosor', city='santiago')
 users = [juan     , pedro   , marcos   , nabucodonosor ]
 ```
 #VSLIDE
-```
+```python
 cities = []
 for user in users:
     cities.append(user.city)
