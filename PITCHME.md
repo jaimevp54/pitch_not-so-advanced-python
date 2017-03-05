@@ -3,7 +3,7 @@
 ## <span style="font-size:0.6em; color:gray">(for real)</span> 
 
 #HSLIDE
-`>>> help()`
+### `>>> help()`
 
 #HSLIDE
 ### `[ comprehensions ]`
@@ -89,12 +89,47 @@ how_many_odds = len([number for number in random_list if number%2 != 0])
 def mul_by_two(x):
     return x*2
 ```
-
 ```python
 mul_by_two = lambda x : x*2
 ``` 
 <!-- .element: class="fragment" -->
+#VSLIDE
+#VSLIDE
+```python
+list_of['int'](3)
+# [34, 23, 15]
+list_of['float'](3)
+# [34.5345, 4.1239, 88.6531]
+```
+#VSLIDE
+```python
+from random import randrange, random
 
+def list_of_integers(length): 
+    result = []
+    for _ in range(length):
+        result.append(randrange(100))
+    return result
+
+def list_of_floats(length): 
+    result = []
+    for _ in range(length):
+        result.append(random()*100)
+    return result
+
+list_of = {
+    'int': list_of_integers,
+    'float': list_of_floats,
+}
+```
+
+```python
+list_of = {
+    'int': lambda length: [randrange(100) for _ in range(length)],
+    'float': lambda length: [random()*100 for _ in range(length)],
+}
+```
+<!-- .element: class="fragment" -->
 
 
 #HSLIDE
