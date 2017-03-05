@@ -1,6 +1,6 @@
 #HSLIDE
 ## Not so advanced python
-<span style="font-size:0.6em; color:gray">(for real)</span> 
+### <span style="font-size:0.6em; color:gray">(for real)</span> 
 
 #HSLIDE
 `>>> help()`
