@@ -70,7 +70,7 @@ for number in random_list:
         how_many_odds += 1
 ```
 #VSLIDE
-```
+```python
 from random import randrange
 
 random_list = [randrange(100) for i in range(10)]
