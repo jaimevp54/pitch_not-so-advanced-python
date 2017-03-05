@@ -21,8 +21,6 @@ users = [juan     , pedro   , marcos   , nabucodonosor ]
 cities = []
 for user in users:
     cities.append(user.city)
-```
-```python
 # cities -> ['Santiago', 'San Juan', 'SANTIAGO', 'santiago']
 ```
 #VSLIDE
@@ -49,9 +47,6 @@ cities = {user.name: user.city for user in users}
 #    }
 ```
 #VSLIDE
-<table>
-<tr>
-<td>
 ```python
 from random import randrange
 
@@ -74,8 +69,7 @@ for number in random_list:
     if number%2 != 0:
         how_many_odds += 1
 ```
-<td/>
-<td class="fragment">
+#VSLIDE
 ```
 from random import randrange
 
@@ -85,9 +79,6 @@ divided_by_3 = [number for number in random_list if number%3==0]
 less_than_15 = [number for number in random_list if number<15]
 how_many_odds = len([number for number in random_list if number%2 != 0])
 ```
-<td/>
-<tr/>
-<table>
 
 #HSLIDE
 #VSLIDE
