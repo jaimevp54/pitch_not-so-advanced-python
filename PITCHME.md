@@ -26,28 +26,35 @@ for user in users:
 # cities => ['Santiago', 'San Juan', 'SANTIAGO', 'santiago']
 ```
 #VSLIDE
-<span class="fragment"> 
+### Lists Comprehensions
 ```python
 cities = [user.city for user in users]
-# cities => ['Santiago', 'San Juan', 'SANTIAGO', 'santiago']
 ```
-<span/>
-
-<span class="fragment"> 
 ```python
-cities = {user.city.lower() for user in users}
-# cities = {'santiago', 'san juan'}
-``` 
-<span/>
-
-<span class="fragment"> 
+# cities -> ['Santiago', 'San Juan', 'SANTIAGO', 'santiago']
+```
+#VSLIDE
+### Set Comprehensions
+```python
+cities -> {user.city.lower() for user in users}
+```
+```python
+# cities -> {'santiago', 'san juan'}
+```
+#VSLIDE
+### Dictionary comprehensions
+```python
 cities = {user.name: user.city for user in users}
-# cities = {'Nabucodonosor': 'santiago', 'Pedro': 'San Juan', 'Marcos': 'SANTIAGO', 'Juan': 'Santiago'}
-<span/> 
-
+```
+```python
+# cities -> {
+    'Nabucodonosor': 'santiago',
+    'Pedro': 'San Juan',
+    'Marcos': 'SANTIAGO',
+    'Juan': 'Santiago'
+    }
+```
 #HSLIDE
-## lambda
-
 #VSLIDE
 
 #HSLIDE
