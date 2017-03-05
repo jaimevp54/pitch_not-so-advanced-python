@@ -81,7 +81,7 @@ how_many_odds = len([number for number in random_list if number%2 != 0])
 ```
 
 #HSLIDE
-$lambda$ambda functions:
+$$lambda$$ambda functions:
 #VSLIDE
 
 #HSLIDE
