@@ -50,7 +50,7 @@ cities = {user.name: user.city for user in users}
 ```
 #VSLIDE
 <div class='row'>
-<div> class='col-sm-6'>
+<div class='col-sm-6'>
 ```python
 from random import randrange
 
@@ -74,7 +74,7 @@ for number in random_list:
         how_many_odds += 1
 ```
 <div/>
-<div> class='col-sm-6'>
+<div class='col-sm-6'>
 ```
 from random import randrange
 
@@ -82,25 +82,4 @@ random_list = [randrange(100) for i in range(10)]
 
 divided_by_3 = [number for number in random_list if number%3==0]
 less_than_15 = [number for number in random_list if number<15]
-how_many_odds = len([number for number in random_list if number%2 != 0])
-```
-<div/>
-<div/>
-
-#HSLIDE
-#VSLIDE
-
-#HSLIDE
-#VSLIDE
-
-#HSLIDE
-#VSLIDE
-
-#HSLIDE
-#VSLIDE
-
-#HSLIDE
-#VSLIDE
-
-#HSLIDE
-
+how_many_odds = len([num
