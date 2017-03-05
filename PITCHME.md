@@ -125,13 +125,14 @@ list_of = {
     'float': list_of_floats,
 }
 ```
+#VSLIDE
+##### Ex 2:
 ```python
 list_of = {
     'int': lambda length: [randrange(100) for _ in range(length)],
     'float': lambda length: [random()*100 for _ in range(length)],
 }
 ```
-<!-- .element: class="fragment" -->
 
 
 #HSLIDE
