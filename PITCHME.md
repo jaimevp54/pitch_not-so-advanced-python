@@ -54,6 +54,39 @@ cities = {user.name: user.city for user in users}
 #    'Juan': 'Santiago'
 #    }
 ```
+#VSLIDE
+```python
+from random import randrange
+
+random_list = []
+for i in range(10):
+    random_list.append(randrange(100))
+
+divided_by_3 = []
+for number in random_list:
+    if number%3==0:
+        divided_by_3.append(number)
+
+less_than_15 = []
+for number in random_list:
+    if number<15:
+        less_than_15.append(number)
+
+how_many_odds = 0 
+for number in random_list:
+    if number%2 != 0:
+        how_many_odds += 1
+```
+```
+from random import randrange
+
+random_list = [randrange(100) for i in range(10)]
+
+divided_by_3 = [number for number in random_list if number%3==0]
+less_than_15 = [number for number in random_list if number<15]
+how_many_odds = len([number for number in random_list if number%2 != 0])
+```
+
 #HSLIDE
 #VSLIDE
 
