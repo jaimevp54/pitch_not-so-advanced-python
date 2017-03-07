@@ -93,10 +93,7 @@ def mul_by_two(x):
 mul_by_two = lambda x : x*2
 ``` 
 <!-- .element: class="fragment" -->
-#VSLIDE
 ##### Ex 1: 
-#VSLIDE
-##### Ex 2: 
 ```python
 list_of['int'](3)
 # [34, 23, 15]
@@ -104,7 +101,7 @@ list_of['float'](3)
 # [34.5345, 4.1239, 88.6531]
 ```
 #VSLIDE
-##### Ex 2:
+##### Ex 1:
 ```python
 from random import randrange, random
 
@@ -126,15 +123,57 @@ list_of = {
 }
 ```
 #VSLIDE
-##### Ex 2:
+##### Ex 1:
 ```python
 list_of = {
     'int': lambda length: [randrange(100) for _ in range(length)],
     'float': lambda length: [random()*100 for _ in range(length)],
 }
 ```
+#VSLIDE
+##### Ex 2:
+```python
+def find(item_list, condition):
+    for item in item_list: 
+        try:
+            if condition(item):
+                return item
+        except Exception as e:
+            pass
+            # print("Error: "+str(item)+" -> "+str(e.__class__))
+```
+#VSLIDE
+```python
+my_list = [12.34, 'Carlos', 34, {'color':'verde'}]
+```
+```python
+def my_func(arg):
+    return len(arg)>5
 
+my_str = find(my_list, my_func)
+# my_str -> 'Carlos'
+```
+<!-- .element: class="fragment" -->
+```python
+my_str = find(my_list, lambda x: len(x)>5)
+# my_str -> 'Carlos'
+```
+<!-- .element: class="fragment" -->
 
+#VSLIDE
+```python
+my_list = [12.34, 'Carlos', 34, {'color':'verde'}]
+```
+```python
+find(my_list, lambda x: type(x) is int)
+#34 
+
+find(my_list, lambda x: x['color'])
+# {'color': 'verde'}
+
+find(my_list, lambda x: x.nombre)
+# None
+```
 #HSLIDE
 #VSLIDE
 
