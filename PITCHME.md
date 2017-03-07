@@ -93,6 +93,7 @@ def mul_by_two(x):
 mul_by_two = lambda x : x*2
 ``` 
 <!-- .element: class="fragment" -->
+#VSLIDE
 ##### Ex 1: 
 ```python
 list_of['int'](3)
