@@ -194,12 +194,11 @@ class SuperString(str):
     def __neg__(self):
         return self.__class__(''.join(list(reversed(self))))
     def __sub__(self, other):
-        print(type(self),self)
         if type(other)==str:
             return self.__class__(''.join([c for c in self if c not in other]))
 ```
 #VSLIDE
-- >>> help('SPECIALMETHODS')
+- help('SPECIALMETHODS')
 - [Python Docs](https://docs.python.org/2/reference/datamodel.html)
 
 #VSLIDE
