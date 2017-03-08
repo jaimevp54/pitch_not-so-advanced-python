@@ -81,7 +81,6 @@ how_many_odds = len([number for number in random_list if number%2 != 0])
 ```
 
 #HSLIDE
-
 ### $$\lambda ambda  functions:$$
 #VSLIDE
 `lambda argument: manipulate(argument)`
@@ -176,10 +175,37 @@ find(my_list, lambda x: x['color'])
 find(my_list, lambda x: x.nombre)
 # None
 ```
+
+#HSLIDE
+### \_\_magic\_methods\_\_()
+#VSLIDE
+- \_\_add\_\_()
+- \_\_mul\_\_()
+- \_\_class\_\_()
+- \_\_doc\_\_()
+- \_\_init\_\_()
+- \_\_str\_\_()
+- \_\_len\_\_()
+
+#VSLIDE
+```python
+class SuperString(str):
+    """ Class for the strings who want something more from life. """
+    def __neg__(self):
+        return self.__class__(''.join(list(reversed(self))))
+    def __sub__(self, other):
+        if type(other)==str:
+            return self.__class__(''.join([c for c in self if c not in other]))
+```
+#VSLIDE
+- help('SPECIALMETHODS')
+- [Python Docs](https://docs.python.org/2/reference/datamodel.html)
+
+#VSLIDE
+
 #HSLIDE
 #VSLIDE
 
-
 #HSLIDE
 #VSLIDE
 
@@ -187,7 +213,5 @@ find(my_list, lambda x: x.nombre)
 #VSLIDE
 
 #HSLIDE
-#VSLIDE
 
-#HSLIDE
 
