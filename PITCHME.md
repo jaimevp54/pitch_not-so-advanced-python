@@ -188,6 +188,7 @@ find(my_list, lambda x: x.nombre)
 - \_\_len\_\_()
 
 #VSLIDE
+```python
 class SuperString(str):
     """ Class for the strings who want something more from life. """
     def __neg__(self):
@@ -196,11 +197,10 @@ class SuperString(str):
         print(type(self),self)
         if type(other)==str:
             return self.__class__(''.join([c for c in self if c not in other]))
-
+```
 #VSLIDE
->>> help('SPECIALMETHODS')
-
-[Python Docs](https://docs.python.org/2/reference/datamodel.html)
+- >>> help('SPECIALMETHODS')
+- [Python Docs](https://docs.python.org/2/reference/datamodel.html)
 
 #VSLIDE
 
