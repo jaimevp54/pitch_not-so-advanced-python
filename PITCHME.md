@@ -201,7 +201,46 @@ class SuperString(str):
 - help('SPECIALMETHODS')
 - [Python Docs](https://docs.python.org/2/reference/datamodel.html)
 
+#HSLIDE
+### with... as... :
+
 #VSLIDE
+```python
+f = open('file.txt')
+try: 
+    f.do_something()
+finally:
+    f.close()
+```
+```python
+with open('file.txt') as f:
+    f.do_something()
+```
+<!-- .element: class="fragment" -->
+
+#VSLIDE
+```python
+class Pizza():
+    def __init__(self, ingredient):
+        self.ingredient = ingredient 
+
+    def __enter__(self):
+        print('Buying a {} pizza'.format(self.ingredient))
+        return 'A {} pizza'.format(self.ingredient)
+
+    def __exit__(self, type, value, traceback):
+        print('Cleaning after my mess of {}!'.format(self.ingredient))
+```
+```python
+with Pizza('lobster') as pizza: 
+    print(pizza) 
+```
+<!-- .element: class="fragment" -->
+```python
+with Pizza('lobster') as pizza1, Pizza('peperoni') as pizza2: 
+    print("I'm eating {} and {}.".format(pizza1, pizza2)) 
+```
+<!-- .element: class="fragment" -->
 
 #HSLIDE
 #VSLIDE
@@ -210,8 +249,3 @@ class SuperString(str):
 #VSLIDE
 
 #HSLIDE
-#VSLIDE
-
-#HSLIDE
-
-
