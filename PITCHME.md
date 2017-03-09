@@ -234,7 +234,6 @@ class Pizza():
 ```python
 with Pizza('lobster') as pizza: 
     print(pizza) 
-
 # Buying a lobster pizza
 # A lobster pizza
 # Cleaning after my mess of lobster!
@@ -243,7 +242,6 @@ with Pizza('lobster') as pizza:
 ```python
 with Pizza('lobster') as pizza1, Pizza('peperoni') as pizza2: 
     print("I'm eating {} and {}.".format(pizza1, pizza2)) 
-
 # Buying a lobster pizza
 # Buying a peperoni pizza
 # I'm eating A lobster pizza. and A peperoni pizza..
