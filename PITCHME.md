@@ -233,7 +233,7 @@ class Pizza():
 ```
 ```python
 with Pizza('lobster') as pizza: 
-    print(pizza) 
+    print("I'm eating {}.".format(pizza1))
 # Buying a lobster pizza
 # A lobster pizza
 # Cleaning after my mess of lobster!
@@ -251,6 +251,7 @@ with Pizza('lobster') as pizza1, Pizza('peperoni') as pizza2:
 <!-- .element: class="fragment" -->
 
 #HSLIDE
+### def func(*args, **kargs):
 #VSLIDE
 
 #HSLIDE
