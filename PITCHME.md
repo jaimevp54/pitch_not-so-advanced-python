@@ -233,6 +233,7 @@ class Pizza():
 ```
 ```python
 with Pizza('lobster') as pizza: 
+
     print("I'm eating {}.".format(pizza1))
 # Buying a lobster pizza
 # A lobster pizza
