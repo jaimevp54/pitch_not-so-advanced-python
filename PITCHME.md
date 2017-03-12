@@ -258,20 +258,18 @@ def func(arg):
     print(arg)
 
 func("My Str")
-# My Str
-
+    # My Str
 func(arg="My Str")
-# My Str
+    # My Str
 ```
 ```python
 def func(arg="Default str"):
     print(arg)
 
 func()
-# Default str
-
+    # Default str
 func(arg="Custom str")
-# Custom str
+    # Custom str
 ```
 <!-- .element: class="fragment" -->
 ```python
@@ -298,18 +296,6 @@ func(1, "Hola",color="azul", cant=28)
 # args -> (1, 'Hola')
 # kwargs -> {'color': 'azul', 'cant': 28}
 ```
-
-#VSLIDE
-```python
-def func(*args, **kwargs):
-    print("args -> "+str(args))
-    print("kwargs -> "+str(kwargs))
-
-func(1, "Hola",color="azul", cant=28)
-# args -> (1, 'Hola')
-# kwargs -> {'color': 'azul', 'cant': 28}
-```
-#VSLIDE
 ```python
 def my_pet(*nicknames, **attributes):
     print("My pet's nicknames")
