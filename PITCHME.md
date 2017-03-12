@@ -272,6 +272,7 @@ func(arg="Custom str")
     # Custom str
 ```
 <!-- .element: class="fragment" -->
+#VSLIDE
 ```python
 def func(arg1, arg2="Default str"):
     print("arg1 -> "+arg1)
@@ -285,7 +286,6 @@ func("My str",arg2="My other str")
 # arg1 -> My str
 # arg2 -> My other str
 ```
-<!-- .element: class="fragment" -->
 #VSLIDE
 ```python
 def func(*args, **kwargs):
