@@ -253,7 +253,83 @@ with Pizza('lobster') as pizza1, Pizza('peperoni') as pizza2:
 #HSLIDE
 ### def func(*args, **kargs):
 #VSLIDE
+```python
+def func(arg):
+    print(arg)
 
+func("My Str")
+# My Str
+
+func(arg="My Str")
+# My Str
+```
+```python
+def func(arg="Default str"):
+    print(arg)
+
+func()
+# Default str
+
+func(arg="Custom str")
+# Custom str
+```
+<!-- .element: class="fragment" -->
+```python
+def func(arg1, arg2="Default str"):
+    print("arg1 -> "+arg1)
+    print("arg2 -> "+arg2)
+
+func("My str")
+# arg1 -> My str
+# arg2 -> Default str
+
+func("My str",arg2="My other str")
+# arg1 -> My str
+# arg2 -> My other str
+```
+<!-- .element: class="fragment" -->
+#VSLIDE
+```python
+def func(*args, **kwargs):
+    print("args -> "+str(args))
+    print("kwargs -> "+str(kwargs))
+
+func(1, "Hola",color="azul", cant=28)
+# args -> (1, 'Hola')
+# kwargs -> {'color': 'azul', 'cant': 28}
+```
+
+#VSLIDE
+```python
+def func(*args, **kwargs):
+    print("args -> "+str(args))
+    print("kwargs -> "+str(kwargs))
+
+func(1, "Hola",color="azul", cant=28)
+# args -> (1, 'Hola')
+# kwargs -> {'color': 'azul', 'cant': 28}
+```
+#VSLIDE
+```python
+def my_pet(*nicknames, **attributes):
+    print("My pet's nicknames")
+    for name in nicknames:
+        print(" - " + name) 
+
+    print("\nMy pet's attributes")
+    for attr in attributes:
+        print(" - "+attr+": "+ str(attributes[attr])) 
+
+my_pet('Firulais', 'Ruffus', age=3, loving=True) 
+# My pet's nicknames
+#  - Firulais
+#  - Ruffus
+#
+# My pet's attributes
+#  - age: 3
+#  - loving: True
+```
+<!-- .element: class="fragment" -->
 #HSLIDE
 #VSLIDE
 
