@@ -251,7 +251,7 @@ with Pizza('lobster') as pizza1, Pizza('peperoni') as pizza2:
 <!-- .element: class="fragment" -->
 
 #HSLIDE
-### def func(*args, **kargs):
+### func(\*args, \*\*kargs):
 #VSLIDE
 ```python
 def func(arg):
