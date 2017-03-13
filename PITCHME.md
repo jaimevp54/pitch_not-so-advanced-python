@@ -317,6 +317,15 @@ my_pet('Firulais', 'Ruffus', age=3, loving=True)
 ```
 <!-- .element: class="fragment" -->
 #HSLIDE
+### Objects Instrospection
 #VSLIDE
 
 #HSLIDE
+### (named\_tuple,)
+#VSLIDE
+
+#HSLIDE
+### for... else...
+### try... else...
+#VSLIDE
+
