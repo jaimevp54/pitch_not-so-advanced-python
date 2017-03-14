@@ -317,15 +317,60 @@ my_pet('Firulais', 'Ruffus', age=3, loving=True)
 ```
 <!-- .element: class="fragment" -->
 #HSLIDE
-### Objects Instrospection
-#VSLIDE
-
-#HSLIDE
 ### (named\_tuple,)
 #VSLIDE
+```python
+import csv
 
-#HSLIDE
-### for... else...
-### try... else...
+with open('my_file.csv') as csvfile:
+    rows = csv.reader(csvfile)
+    
+    for row in rows:
+        print(row[1],row[-3])
+```
+
+```python
+from collections import namedtuple
+
+with open('my_file.csv') as csvfile:
+    rows = csv.reader(csvfile)
+
+    House = namedtuple('House', rows[0])
+    for row in rows:
+        house = House._make(row) 
+        print(house.city, house.price)
+```
+<!-- .element: class="fragment" -->
 #VSLIDE
+```python
+rows = (
+    ('Jose', 2, False),
+    ('Pedro', 10, True),
+    ('Marcos', 1, False),
+    ('Nabucodonosor', 23, True),
+    ('Ivan', 0, False),
+)
+```
+```python
+for person in rows:
+    if person[1]>5 and person[2]==False:
+        print('We got one!!!')
+        break
+else:
+    print('No Luck :(')
+```
+<!-- .element: class="fragment" -->
+```python
+from collections import namedtuple
 
+Person = namedtuple('Person', ['name', 'cats_amount', 'single'])
+people = [Person._make(row) for row in rows] 
+
+for person in people:
+    if person.cats_amount >5 and person.single==False:
+        print('We got one!!!')
+        break
+else:
+    print('No Luck :(')
+```
+<!-- .element: class="fragment" -->
