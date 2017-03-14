@@ -360,6 +360,7 @@ else:
     print('No Luck :(')
 ```
 <!-- .element: class="fragment" -->
+#VSLIDE
 ```python
 from collections import namedtuple
 
@@ -373,4 +374,3 @@ for person in people:
 else:
     print('No Luck :(')
 ```
-<!-- .element: class="fragment" -->
