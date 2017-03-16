@@ -8,6 +8,7 @@
 #HSLIDE
 ### `[ comprehensions ]`
 #VSLIDE
+##### Ex 1:
 ```python
 juan = Person(name='Juan', city='Santiago')
 pedro = Person(name='Pedro', city='San Juan')
@@ -47,6 +48,7 @@ cities = {user.name: user.city for user in users}
 #    }
 ```
 #VSLIDE
+##### Ex 2:
 ```python
 from random import randrange
 
@@ -374,3 +376,12 @@ for person in people:
 else:
     print('No Luck :(')
 ```
+
+#HSLIDE
+ - `>>> help()`
+ - `[ comprehensions ]`
+ - $$\lambda ambda  functions:$$
+ - \_\_magic\_methods\_\_()
+ - with... as... :
+ - func(\*args, \*\*kargs):
+ - (named\_tuple,)
