@@ -153,12 +153,12 @@ my_list = [12.34, 'Carlos', 34, {'color':'verde'}]
 def my_func(arg):
     return len(arg)>5
 
-my_str = find(my_list, my_func)
+my_str = find(my_list, condition=my_func)
 # my_str -> 'Carlos'
 ```
 <!-- .element: class="fragment" -->
 ```python
-my_str = find(my_list, lambda x: len(x)>5)
+my_str = find(my_list, condition=lambda x: len(x)>5)
 # my_str -> 'Carlos'
 ```
 <!-- .element: class="fragment" -->
@@ -182,19 +182,28 @@ find(my_list, lambda x: x.nombre)
 ### \_\_magic\_methods\_\_()
 #VSLIDE
 - \_\_add\_\_()
+    - <span style="font-size:0.6em; color:gray">a+b</span>
 - \_\_mul\_\_()
-- \_\_class\_\_()
-- \_\_doc\_\_()
+    - <span style="font-size:0.6em; color:gray">a\*b</span>
+- \_\_doc\_\_
+    - <span style="font-size:0.6em; color:gray">help()</span>
 - \_\_init\_\_()
+    - <span style="font-size:0.6em; color:gray">Dog(name='Rufus')</span>
 - \_\_str\_\_()
+    - <span style="font-size:0.6em; color:gray">str()</span>
 - \_\_len\_\_()
+    - <span style="font-size:0.6em; color:gray">len()</span>
 
 #VSLIDE
 ```python
 class SuperString(str):
     """ Class for the strings who want something more from life. """
+
+    __doc__ = "Awesome " +__doc__
+
     def __neg__(self):
         return self.__class__(''.join(list(reversed(self))))
+
     def __sub__(self, other):
         if type(other)==str:
             return self.__class__(''.join([c for c in self if c not in other]))
@@ -230,12 +239,12 @@ class Pizza():
         print('Buying a {} pizza'.format(self.ingredient))
         return 'A {} pizza'.format(self.ingredient)
 
-    def __exit__(self, type, value, traceback):
+    def __exit__(self, _type, value, traceback):
         print('Cleaning after my mess of {}!'.format(self.ingredient))
 ```
 ```python
 with Pizza('lobster') as pizza: 
-    print("I'm eating {}.".format(pizza1))
+    print("I'm eating {}.".format(pizza))
 # Buying a lobster pizza
 # A lobster pizza
 # Cleaning after my mess of lobster!
@@ -253,7 +262,7 @@ with Pizza('lobster') as pizza1, Pizza('peperoni') as pizza2:
 <!-- .element: class="fragment" -->
 
 #HSLIDE
-### func(\*args, \*\*kargs):
+### func(\*args, \*\*kwargs):
 #VSLIDE
 ```python
 def func(arg):
